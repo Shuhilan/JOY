@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0em;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: rgb(7, 171, 247);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: min(1600px,100%);
+    background-color: rgb(252, 6, 6);
+    border-radius: 0 0 15px 15px;
+    padding: 12px 30px;
+}
+.box{
+    flex: 1;
+    max-width: 360px;
+    background-color: rgb(252, 251, 250);
+    margin: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    color: black;
+    transition: .3s linear;
+    height: 400px;
+}
+.price{
+    color: rgb(26, 231, 153);
+}

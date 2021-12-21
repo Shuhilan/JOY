@@ -1,0 +1,54 @@
+body{
+  background-color: black;
+  text-align: center;
+  justify-content: center;
+}
+h1{
+  color: #ff0;
+  text-align: center;
+  justify-content: center;
+  
+}
+
+button {
+  
+  width: 140px;
+  height: 45px;
+  font-size: 23px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #ff0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1;
+ }
+ 
+ button::before {
+   
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #ff0;
+  z-index: -1;
+  transition: all 0.5s;
+ }
+ 
+ button:hover::before {
+  width: 100%;
+ }
+ 
+ button:hover {
+  color: black;
+ }
+ 
+ button:active:before {
+  background: #ff0;
+ }
+ 
